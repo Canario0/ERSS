@@ -1,0 +1,5 @@
+*
+!*.py
+!*.jmx
+!*.sh
+!*.template
