@@ -111,11 +111,11 @@
             <stringProp name="66952">CPU</stringProp>
             <stringProp name="0"></stringProp>
           </collectionProp>
-          <collectionProp name="-2062092864">
+          <collectionProp name="-1245886129">
             <stringProp name="820435565">virtual.lab.inf.uva.es</stringProp>
             <stringProp name="48609943">31324</stringProp>
             <stringProp name="-1993889503">Memory</stringProp>
-            <stringProp name="3599293">used</stringProp>
+            <stringProp name="-278579165">usedperc</stringProp>
           </collectionProp>
           <collectionProp name="1755069322">
             <stringProp name="820435565">virtual.lab.inf.uva.es</stringProp>

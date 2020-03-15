@@ -24,8 +24,7 @@ os.system(f'mkdir {scriptPath}escenario_2/')
 
 print('----------------------------------------------------------- Inicio -----------------------------------------------------------\n')
 # Nota: escenario 1 en este caso es la imagen pequeña, escenario 2 es la imagen grande
-# for charge in [75, 150, 300]:
-for charge in [10]:
+for charge in [75, 150, 300]:
     print('-----------------------------', bcolors.OKGREEN + 'Lanzo la carga',
           charge, 'contra', 'escenario_1' + bcolors.ENDC, '-----------------------------')
     ts = time.time()
