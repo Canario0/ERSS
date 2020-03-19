@@ -55,11 +55,11 @@ for arg in sys.argv:
                 if("Memory" in row[2]):
                     mem.writerow((row[0], float(row[1])/1000))
                 if("Swap" in row[2]):
-                    swap.writerow(row[0:2])
+                    swap.writerow((row[0], float(row[1])/1000))
                 if("reads" in row[2]):
-                    dr.writerow(row[0:2])
+                    dr.writerow((row[0], float(row[1])/1000))
                 if("reads" in row[2]):
-                    dw.writerow(row[0:2])
+                    dw.writerow((row[0], float(row[2])/1000))
             # print(i, row)
 
     # Código original
