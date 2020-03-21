@@ -1,6 +1,6 @@
 import csv
 import sys
-
+import datetime
 sumaCuadradosM = 0
 sumaCuadradosS = 0
 sumaCuadradosD = 0
@@ -25,9 +25,7 @@ def read_csv(file):
                 print(i, row)
                 yield ("time", "CPU Usage")
             else:
-                if(i == 1):
-                    timeStamp = int(row[0])
-                yield (int(row[0]) - timeStamp, row[1], row[2])
+                yield (int(row[0]), row[1], row[2])
 
 
 # Datos de entrada
