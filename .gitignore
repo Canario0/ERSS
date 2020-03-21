@@ -3,3 +3,5 @@
 !*.jmx
 !*.sh
 !*.template
+!Pipfile
+!Pipfile.lock
