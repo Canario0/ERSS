@@ -59,7 +59,6 @@ for arg in sys.argv:
                 if("reads" in row[2]):
                     dr.writerow((row[0], float(row[1])/1000))
                 if("reads" in row[2]):
-                    print(row[2])
                     dw.writerow((row[0], float(row[1])/1000))
             # print(i, row)
 
