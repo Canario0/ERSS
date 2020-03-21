@@ -1,6 +1,6 @@
 import csv
 import sys
-import datetime
+from datetime import datetime
 sumaCuadradosM = 0
 sumaCuadradosS = 0
 sumaCuadradosD = 0
@@ -25,7 +25,10 @@ def read_csv(file):
                 print(i, row)
                 yield ("time", "CPU Usage")
             else:
-                yield (int(row[0]), row[1], row[2])
+                if i == 1:
+                    timeStamp = datetime.fromtimestamp(float(row[0])/1000)
+                time = datetime.fromtimestamp(float(row[0])/1000) - timeStamp
+                yield (str(time), row[1], row[2])
 
 
 # Datos de entrada
@@ -56,7 +59,7 @@ for arg in sys.argv:
                     swap.writerow((row[0], float(row[1])/1000))
                 if("reads" in row[2]):
                     dr.writerow((row[0], float(row[1])/1000))
-                if("reads" in row[2]):
+                if("writes" in row[2]):
                     dw.writerow((row[0], float(row[1])/1000))
             # print(i, row)
 
