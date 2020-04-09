@@ -33,4 +33,4 @@ for i in range(6):
     os.system(toExecute)
     # Para generar el reporte en html descomentar la siguiente linea
     # os.system(f'{jmeterPath}jmeter  -g {scriptPath}php/{st}.{charge}.jtl -o {scriptPath}php/{st}.{charge}')
-    time.sleep(2700)
+    time.sleep(1200)
